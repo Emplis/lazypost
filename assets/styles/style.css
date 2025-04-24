@@ -125,7 +125,11 @@
 }
 
 .picture > input:disabled {
-    cursor: default;
+    cursor: not-allowed;
+}
+
+.picture > input[data-state="processing"] {
+    cursor: wait;
 }
 
 .send {
